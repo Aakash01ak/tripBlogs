@@ -1,0 +1,65 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+  <div class="showblog">
+        <br>
+        <h1><%= blog.name %></h1>
+        <p class="user">
+          <i class="fa fa-user" aria-hidden="true"></i> Author : <span style="color: violet; font-weight: bold;"> <%= blog.author.username %></span>
+        </p>
+        <div class="meta">
+          <span class="user1"><i class="fa fa-calendar" aria-hidden="true"></i> <%= blog.created.toDateString() %></span>
+       </div> <br>
+        <img src="<%= blog.image %>">
+        <div class="container">
+          <div class="bloginfo">
+            <p><%- blog.description %></p>
+            
+           
+            <% if(currentUser && blog.author.id.equals(currentUser._id)){ %>
+            
+              <a class="btn btn-warning" href="/blogs/<%= blog._id %>/edit">Edit</a>
+            <form action="/blogs/<%= blog._id %>/?_method=DELETE" method="POST" class="dang">
+              <button class="btn  btn-danger" >Delete</button>
+            </form>
+            <% } %>
+          </div>
+      </div>
+  
+      
+
+
+      <hr>
+      <a class="btn btn-success" href="/blogs/<%= blog._id %>/comments/new" style="float:right; margin-right: 3%;">Add New Comment</a><br>
+      <br>
+
+      <% blog.comments.forEach(function(comment){ %>
+        <div class="bloginfo1">
+
+    <div class="row">
+      <div class="col-lg-12">
+            <span class="user2"><i class="fa fa-calendar" aria-hidden="true"></i> <%= blog.created.toDateString() %></span>
+
+            <p class="usercomment">
+              <strong><i style="color: red;" class="fa fa-user" aria-hidden="true"></i> <span > <%= comment.author.username %></span></strong> says - <%- comment.text %>
+            </p>
+            
+            <% if(currentUser && comment.author.id.equals(currentUser._id)){ %>
+
+            <a class="btn btn-xs btn-warning" href="/blogs/<%= blog._id %>/comments/<%= comment._id %>/edit">Edit</a>
+
+            <form action="/blogs/<%= blog._id %>/comments/<%= comment._id %>/?_method=DELETE" method="POST" class="dang">
+              <button class="btn btn-xs btn-danger">Delete</button>
+            </form>
+            <% } %>
+       </div>
+      </div>
+    </div>
+     <% }); %> 
+    <br>
+   </div>
+</div>
+
+
+
+<%- include("../partials/footer") %>

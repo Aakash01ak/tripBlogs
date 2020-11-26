@@ -1,0 +1,21 @@
+<%- include("partials/header") %>
+
+<div class="container">
+   <div class="row">
+      <div class="col-lg-12">
+         <div class="form1">
+            <p class="loginlogo"><i class="fa fa-user-plus" aria-hidden="true"></i></p>
+            <h4>Registration Form</h4>
+                  <form action="/register" method="POST">
+                     <p class="name1">Username</p>
+                     <input type="text" name="username" placeholder="Username">
+                     <p class="name1">Password</p>
+                     <input type="password" name="password" placeholder="Password">
+                     <input type="submit" class="btn btn-danger" value="Register">
+                  </form>
+        </div>
+     </div>
+   </div>
+</div>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+
+<div class="container">
+    <div class="row">
+       <div class="col-lg-12">
+          <div class="form2">
+             <h4><i id="logo3" class="fa fa-paper-plane"></i> Add new blog</h4>
+                    <form action="/blogs" method="POST">
+                        <p class="name1">Title</p>
+                        <input type="text" name="name" placeholder="Title">
+                        <p class="name1">Image URL</p>
+                        <input type="text" name="image" placeholder="Image URL">
+                        <p class="name1">Description</p>
+                         <textarea name="description" placeholder="Share your experience.."></textarea><br>
+                        <input class="btn btn-danger" type="submit" value="Add">
+                    </form>
+          </div>
+      </div>
+   </div>
+</div>
+
+<%- include('../partials/footer') %>

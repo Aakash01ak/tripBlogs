@@ -1,0 +1,28 @@
+<%- include("partials/header") %>
+
+<div class="container">
+   <div class="row">
+      <div class="col-lg-12">
+         <div class="form1">
+            <p class="loginlogo"><i class="fa fa-user-circle-o" aria-hidden="true"></i></p>
+            <h4>Login Form</h4>
+            <form action="/login" method="POST">
+               <p class="name1">Username</p>
+                <input  type="text" name="username" placeholder="Username">
+               <p class="name1">Password</p>
+                 <input  type="password" name="password" placeholder="Password">
+                 <input type="submit" class="btn btn-danger" value="Log In">
+            <p class="registerlink">Haven't yet registered? &nbsp;&nbsp;
+               <a href="/register">Register</a>
+            </p>
+            
+          </form>
+         </div>
+      </div>
+   </div>
+</div>
+ 
+
+
+
+<%- include("partials/footer") %>

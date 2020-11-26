@@ -1,0 +1,351 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1449846859890-2e19a995bcfd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Exo 2;
+}
+
+html{
+    height: 100%;
+}
+
+/* Navbar */
+
+#navbarNav ul li a {
+    color: purple;
+    font-weight: bold;
+}
+#navbarNav ul li a:hover {
+    opacity: 0.6;
+}
+
+.navbar .navbar-brand{
+    color: purple;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.navbar .navbar-brand:hover{
+    font-weight: bold;
+    color: purple;
+    opacity: 0.7;
+}
+
+#logo1{
+    color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+/* login and registration Forms */
+.form1{
+    width: 320px;
+    height: 430px;
+    margin: 100px auto;
+    background-color: black;
+    padding: 8px 30px;
+    color: white;
+}
+.form1 input[type="password"]{
+    margin-bottom: 19px;
+}
+
+.form1 input[type="text"],input[type="password"]{
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: white;
+    font-size: 17px;
+    margin-bottom: 12px;
+    padding-bottom: 15px;
+}
+
+.form1 input[type="submit"]{
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.form1 h4{
+    text-align: center;
+}
+
+.registerlink{
+  text-align: center;
+}
+
+.form1 input[type="submit"]:hover{
+    color:black;
+    background-color: yellow;
+}
+
+.registerlink a{
+    text-decoration: none;
+    color: blue;
+    font-weight: 600;
+}
+
+.registerlink a:hover{
+    color:yellow ;
+}
+.name1{
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 0;
+}
+.loginlogo{
+    color: #d9534f;
+    text-align: center;
+    font-size: 60px;
+    top: -50%;
+}
+
+/* Add new blog and edit form */
+.form2{
+    width: 620px;
+    height: 700px;
+    margin: 100px auto;
+    background-color: black;
+    padding: 28px 30px;
+    color: white;
+}
+
+.form2 input[type="text"]{
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: white;
+    font-size: 17px;
+    margin-bottom: 12px;
+    padding-bottom: 15px;
+}
+
+.form2 input[type="submit"]{
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.form2 h4{
+    text-align: center;
+    color: #d9534f;
+}
+
+.form2 input[type="submit"]:hover{
+    color:black;
+    background-color: yellow;
+}
+
+.name1{
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 0;
+}
+
+#logo3{
+    color: #d9534f;
+    border: 1.3px solid #d9534f;
+    border-radius: 50%;
+}
+
+/* Add Comment and Edit form  */
+.form3{
+    width: 620px;
+    height: 530px;
+    margin: 100px auto;
+    background-color: black;
+    padding: 28px 30px;
+    color: white;
+}
+
+.form3 input[type="submit"]{
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.form3 h4{
+    text-align: center;
+    color: #d9534f;
+}
+
+.form3 input[type="submit"]:hover{
+    color:black;
+    background-color: yellow;
+}
+.blogname{
+    color: violet;
+    text-decoration: underline;
+}
+
+/* blog page */
+
+.jumbotron{
+    background-color: rgba(184, 171, 163,0.5);
+}
+
+.lead a:hover{
+ color: black;
+ background-color: yellow;
+ font-weight: 600;
+ outline: none;
+ border: none;
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.dte{
+    color: blue;
+}
+
+
+/* Show page */
+
+.showblog{
+    background: white;
+    opacity: 0.98;
+}
+.showblog h1{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 2.5em;
+    /* text-shadow: 4px 2px 1px gray; */
+    margin-bottom: 20px;
+}
+.showblog img{
+    width: 100%;
+    border: 2px solid black;
+}
+
+.bloginfo{
+    margin: 35px 20px;
+}
+
+.user{
+    margin-left: 5%;
+    font-size: 1.5em;
+    color: grey;
+}
+
+.user1{
+    margin-left: 5%;
+    font-size: 1.2em;
+    color: blue;
+}
+
+.dang{
+    display: inline;
+    padding-left: 10px;
+}
+
+.user2{
+    margin-right: 5.5%;
+    font-size: 1.2em;
+    color: blue;
+    float: right;
+}
+
+.showblog hr{
+        width: 93.9%;
+        height: 12px;
+        border: 0;
+        box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+    } 
+
+.bloginfo1{
+        margin: 3px 35px;
+        padding: 15px;
+        border: 1px solid black;
+    }
+ .usercomment{
+     font-size: 1.4em;
+    display: inline; 
+ }   
+
+
+
+
+
+
+
+
+@media only screen and (max-width:800px){
+    .form2{
+        width: 500px;
+        height: 770px;
+        margin: 100px auto;
+        background-color: black;
+        padding: 18px 16px;
+        color: white;
+    }
+    .form3{
+        width: 500px;
+        height: 770px;
+        margin: 100px auto;
+        background-color: black;
+        padding: 18px 16px;
+        color: white;
+    }
+}
+
+@media only screen and (max-width:360px){
+    .form1{
+        height: 440px;
+        width: 280px;
+    }
+    .form2{
+        width: 338px;
+        height: 770px;
+        margin: 100px auto;
+        background-color: black;
+        padding: 18px 16px;
+        color: white;
+    }
+    .form3{
+        width: 338px;
+        height: 610px;
+        margin: 100px auto;
+        background-color: black;
+        padding: 18px 16px;
+        color: white;
+    }
+    .user2{
+        margin-right: 2.5%;
+        font-size: 1em;
+    }
+    .showblog h1{
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 2.0em;
+        /* text-shadow: 4px 2px 1px gray; */
+        margin-bottom: 20px;
+    }
+    .user{
+        margin-left: 5%;
+        font-size: 1.3em;
+        color: grey;
+    }
+}
+
+
+
+
+
+
+
+

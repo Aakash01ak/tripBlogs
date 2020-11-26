@@ -1,0 +1,19 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+    <div class="row">
+       <div class="col-lg-12">
+          <div class="form3">
+             <h4><i id="logo3" class="fa fa-paper-plane"></i> Add new comment to <span class="blogname"><%= blog.name %></span></h4>
+                    <form action="/blogs/<%= blog._id %>/comments" method="POST">
+                        <p class="name1">Comment</p>
+                        <textarea name="comment[text]" placeholder="Comment"></textarea><br>
+                        <input class="btn btn-danger" type="submit" value="Add">
+                    </form>
+           </div>
+       </div>
+    </div>
+</div>
+
+
+<%- include("../partials/footer") %>

@@ -1,0 +1,83 @@
+/* HOME PAGE */
+
+body{
+    background: url("https://wallpaperplay.com/walls/full/c/0/5/193156.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Bitter;
+    
+}
+
+html{
+    height: 100%;
+}
+
+#navbarNav ul li a {
+    color: purple;
+    font-weight: bold;
+}
+#navbarNav ul li a:hover {
+    opacity: 0.6;
+}
+
+.navbar .navbar-brand{
+    color: purple;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.navbar .navbar-brand:hover{
+    font-weight: bold;
+    color: purple;
+    opacity: 0.7;
+}
+
+.btn {
+    border-radius: 10%;
+}
+
+hr{
+    width:400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+h4{
+    margin-left: 5px;;
+    font-style: italic;
+    text-shadow: 1px 1px 1px rgba(265,265,265,0.8);
+}
+h1{
+    font-weight: bold;
+    font-size: 5em;
+    text-shadow: 3px 3px 3px rgba(265,265,265,0.8);
+}
+
+#home{
+    text-align: center;
+    padding: 7%;
+}
+
+#logo{
+    color: red;
+    border: 1.8px solid red;
+    border-radius: 50%;
+}
+#logo1{
+    color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+
+@media only screen and (max-width:360px){
+    #home{
+        padding-top: 18%;
+    }
+
+    hr{
+        width:300px;   
+    }
+    h1{
+        font-size: 4em;
+    }
+}
